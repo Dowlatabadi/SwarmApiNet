@@ -3,17 +3,17 @@
 docker stack deploy --compose-file docker-compose.yml stackname
 ```
 
-###Scaling up service
+### Scaling up service
 ```console
 docker service scale stackname_simple-time-api=5
 ```
-### testing the loadbalancer!
+### Testing the loadbalancer!
 
 ```console
  for i in `seq 100`; do curl 127.0.0.1:8080; echo ''; done
 ```
 
-###sampled output
+### Sampled output
 ```console
 api:972483304 response=ok ok ok 07/10/2022 17:33:56
 api:2119011498 response=ok ok ok 07/10/2022 17:33:56
