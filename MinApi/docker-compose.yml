@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+    simple-time-api:
+        build: .
+        container_name: es-container
+        image: simple-time-api
+
+        ports:
+            - 8080:80  
